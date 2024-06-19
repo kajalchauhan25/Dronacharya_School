@@ -1,0 +1,516 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: rgb(6, 6, 73);
+
+}
+
+h2 {
+
+    color: rgb(3, 140, 140);
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+img {
+    object-fit: cover;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    
+    
+
+}
+
+.navbar>a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    
+}
+
+.navbarlist li {
+
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+
+}
+
+li a{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+li a:hover {
+    background-color: white;
+    text-align: center;
+}
+
+
+li.dropdown {
+    display: inline-block;
+    position: relative;
+    
+}
+.dropbtn {
+    min-width: 100px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 4px 4px 10px 4px ;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px ;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-align: center;
+}
+.dropdown:hover .dropbtn{
+    background-color: white;
+    
+}
+.dropdown:hover .dropdown-content  {
+    display: block;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+ .dropdown-content a:hover{
+    background-color: grey;
+
+ }
+
+.navicon i {
+   
+    font-size: 3.5px;
+   
+}
+.navicon .fa{              
+    color: black;
+     padding: 2px 20px 0px 0px;
+}
+ .hamburger {
+    color: rgb(55, 54, 54);
+    font-size: 30px;
+    display: none;
+    margin-right: 10px;
+  }
+  
+  input[type='checkbox'] {
+    display: none;
+  
+  } 
+
+#box1 {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(img/gurukul.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.para1 {
+    padding: 15% 24%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.para1>h3 {
+    letter-spacing: 2px;
+    line-height: 50px;
+
+}
+
+.para1>h1 {
+    color: rgb(255, 255, 255);
+    line-height: 55px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+
+}
+
+.para1>p {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    line-height: 30px;
+
+}
+
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 25px;
+    font-size: 1.5rem;
+}
+
+.button>button {
+    padding: 14px 12px;
+    border-radius: 5px;
+    border: 1px transparent;
+
+}
+
+.button1:hover {
+    background-color: rgb(103, 103, 185);
+
+}
+
+.button1>a {
+    text-decoration: none;
+    color: black;
+}
+
+.button2>a {
+    text-decoration: none;
+    color: white;
+}
+
+.button2 {
+    background-color: rgb(5, 183, 186);
+    color: white;
+}
+
+.button2:hover {
+    background-color: rgb(103, 103, 185);
+
+}
+
+#box2 {
+    text-align: center;
+    padding: 5%;
+}
+
+.potentials {
+    padding: 1% 2%;
+    transition-duration: 0.5s;
+}
+
+.potentials:hover {
+    background-color: white;
+    border: 5px transparent;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 4px 4px rgba(178, 178, 178, 0.478);
+}
+
+.potentials>h3 {
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.potentials:hover>h3 {
+    color: rgb(3, 140, 140);
+    transition-duration: 0.1s;
+}
+
+.fa {
+    background-size: 100px;
+    font-size: 500% !important;
+    color: rgb(3, 140, 140);
+    padding-bottom: 20px;
+}
+
+.potentials:hover>i {
+    transform: rotate(-20deg);
+    transition-duration: 0.5s;
+}
+
+#box3 {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5% 5%;
+}
+
+.web-design {
+    border: transparent;
+    border: 5px;
+    margin: 2vw;
+
+}
+
+.web-design:hover {
+
+    background-color: whitesmoke;
+    border: 5px transparent;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 4px 4px rgba(178, 178, 178, 0.478);
+    transition-duration: 0.5s;
+
+}
+
+.web-design>h4,
+h2 {
+    padding: 1vw;
+}
+
+.web-design>img {
+    border-radius: 5px;
+}
+
+.web-design>i {
+    font-size: 15px !important;
+    padding: 0.6vw;
+    color: grey;
+    letter-spacing: 1px;
+}
+
+#box3>a {
+    color: rgb(3, 140, 140);
+
+}
+
+#box4 {
+    padding: 5% 0%;
+    line-height: 25px;
+}
+
+.box4-title {
+    padding-bottom: 5%;
+}
+
+.box4-content {
+    padding: 5%;
+}
+
+.box4-content>h3,
+h2,
+p {
+    padding: 1%;
+
+}
+
+.column-content>i {
+    width: 100%;
+    border: 1px transparent;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 2px 2px rgba(178, 178, 178, 0.478);
+    text-align: center;
+    padding: 50px 30px;
+    font-size: 50px !important;
+
+}
+
+.column-content>h3 {
+    padding: 3%;
+
+}
+
+.box4-content>img {
+    width: 100%;
+    margin-top: 5vw;
+
+}
+
+#box5 {
+    padding: 5% 10%;
+    text-align: center;
+}
+.box5-head h3 {
+    color: rgb(5, 183, 186);
+   
+}
+.box5-content h2 {
+    font-size: 3.2rem;
+   
+}
+.rows h3 {
+    color: rgb(6, 6, 73);
+   
+}
+
+hr {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#box6 {
+    text-align: center;
+    padding: 5% 0%;
+}
+
+.box6column h2 {
+    color: rgba(8, 8, 90, 0.73);
+}
+
+.box6content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box6content {
+    border: 1px transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0.1px 0.1px 4px 4px rgba(178, 178, 178, 0.47);
+
+}
+
+.calender {
+    display: flex;
+    padding-top: 10px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.calender i {
+    font-size: 15px !important;
+    font-weight: normal;
+    color: gray;
+}
+
+.box6content:hover {
+    background-color: whitesmoke;
+    border: 5px transparent;
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 9px 10px rgba(178, 178, 178, 0.478);
+    transition-duration: 0.5s;
+}
+
+#box7 {
+    padding: 5% 10%;
+}
+
+.newsform {
+    padding: 10%;
+    background-color: rgb(234, 229, 229);
+   
+}
+
+
+.news h4 {
+    color: rgb(5, 183, 186);
+}
+
+.form2 {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgb(2, 156, 105);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: transparent;
+
+}
+
+.form button {
+    width: 100%;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 12px;
+    float: right;
+    color: white;
+    outline: hidden;
+    background-color: rgb(98, 203, 168);
+    margin-top: 4px;
+    margin-right: 0px;
+    
+}
+
+#box9 {
+    padding: 10% ;
+
+}
+.footicon .fa {
+    color: grey;
+    font-size: 25px !important;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.footrow1 {
+    
+    color: grey;
+    line-height: 35px;
+    text-align: center;
+}
+
+.footrow1 h1 {
+    font-weight: 1px;
+    font-size: 40px;
+}
+
+.footrow {
+    /* width: 15vw; */
+}
+
+.footrow h2 {
+    color: rgb(6, 6, 73);
+    text-align: center;
+    padding: 10px;
+}
+
+.footrow ul {
+    color: grey;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    /* margin: 0px 0px 10px; */
+
+}
+
+.lastcontent {
+    background-color: grey;
+    text-align: center;
+    padding: 5%;
+}
+
+.name span {
+    color: rgb(5, 56, 56);
+    font-weight: 4px;
+
+}
